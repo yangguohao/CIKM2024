@@ -57,7 +57,7 @@ def instantiate_network(config):
                                         space_dim=3,
                                         fun_dim=0,
                                         n_head=8,
-                                        act="gelu",
+                                        act="silu",
                                         mlp_ratio=2,
                                         out_dim=config.out_channels,
                                         slice_num=32,

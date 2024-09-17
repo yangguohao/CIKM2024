@@ -6,8 +6,8 @@ project_name: "ShapeNetCar"
 num_epochs: 100
 batch_size: 1
 eval_batch_size: 1
-lr: 0.00001
-device: "gpu:2"
+lr: 0.0005
+device: "gpu:0"
 save_interval: 20
 
 # model setting

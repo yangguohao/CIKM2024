@@ -1,9 +1,6 @@
 import paddle
 import numpy as np
 import sys
-sys.path.append("./PaddleScience/")
-sys.path.append('./3rd_lib')
-
 from pathlib import Path
 from src.data.base_datamodule import BaseDataModule
 from src.data.velocity_datamodule import read

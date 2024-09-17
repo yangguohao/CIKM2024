@@ -1,0 +1,34 @@
+base: !include base.yaml
+run_name: 'UNetShapeNetCar'
+project_name: "ShapeNetCar"
+
+# train setting
+num_epochs: 100
+batch_size: 1
+eval_batch_size: 1
+lr: 0.00001
+device: "gpu:2"
+save_interval: 20
+
+# model setting
+mode: "train"
+model: "Transolver"
+model_name: "efficientnet-b0"
+in_channels: 1
+out_channels: 1 # velociy x, velociy y, velociy z
+num_levels: 4
+hidden_channels: 64
+use_position_input: False
+use_attn: false
+
+# dataset setting
+data_module: "CdDataModule"
+train_data_dir: "./data/Training/Dataset_2/Feature_File/"
+test_data_dir: "./data/Test/Dataset_2/Feature_File/"
+sdf_spatial_resolution: [64, 64, 64]
+point_data_pos: "press on mesh points" 
+
+# eval setting
+write_to_vtk: false
+out_keys: ["Cd"]
+track : "Dataset_2_Cd"

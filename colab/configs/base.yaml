@@ -1,0 +1,32 @@
+# Define learning rate yaml
+lr: 0.002
+num_epochs: 200
+batch_size: 4
+
+# Logger
+logger_types: ["tensorboard"] # ["tensorboard", "wandb"]
+log_dir: "logs/"
+eval_interval: 50 # epoch
+project_name: "car-cfd"
+run_name: "default"
+entity: 'nvr-ai-algo'
+# dataset
+data_path: "car-dataset"
+data_module: "CFDDataModule"
+
+# TODO: update
+train_ratio: 1.
+val_ratio: 0.
+test_ratio: 0.
+
+# default model
+model: "GNO"
+ 
+# optimizer (Fake, to be implemented)
+opt:
+  scheduler: "CosineAnnealingLR"
+  step_size: 50
+  gamma: 0.5
+
+# Plot
+test_plot_interval: 20  # save image for every N'th test data

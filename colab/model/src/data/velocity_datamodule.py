@@ -1,6 +1,4 @@
 import sys
-sys.path.append("./PaddleScience/")
-sys.path.append('/home/aistudio/3rd_lib')
 
 import vtk
 import paddle

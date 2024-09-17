@@ -23,8 +23,8 @@ use_attn: false
 
 # dataset setting
 data_module: "CdDataModule"
-train_data_dir: "./data/Training/Dataset_2/Feature_File/"
-test_data_dir: "./data/Test/Dataset_2/Feature_File/"
+train_data_dir: "./Training/Dataset_2/Feature_File/"
+test_data_dir: "./Test/Dataset_2/Feature_File/"
 sdf_spatial_resolution: [64, 64, 64]
 point_data_pos: "press on mesh points" 
 

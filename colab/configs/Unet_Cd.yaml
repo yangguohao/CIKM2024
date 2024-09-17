@@ -15,7 +15,7 @@ mode: "train"
 model: "Transolver"
 model_name: "efficientnet-b0"
 in_channels: 1
-out_channels: 1 # velociy x, velociy y, velociy z
+out_channels: 3 # velociy x, velociy y, velociy z
 num_levels: 4
 hidden_channels: 64
 use_position_input: False

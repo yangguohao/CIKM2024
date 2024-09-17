@@ -8,7 +8,7 @@ from src.data.velocity_datamodule import read
 
 class CdDataset(paddle.io.Dataset):
     def __init__(self, input_dir, index_list):
-        self.cd_list = np.loadtxt("/content/Test/Dataset_1/Feature_File/watertight_meshes.txt", delimiter=",", dtype=str, encoding='utf-8')[:,2][1:].astype(np.float32)
+        self.cd_list = np.loadtxt("./Training/Dataset_2/Label_File/dataset2_train_label.csv", delimiter=",", dtype=str, encoding='utf-8')[:,2][1:1+len(index_list)].astype(np.float32))
         self.input_dir = input_dir
         self.index_list = index_list
         self.len = len(index_list)

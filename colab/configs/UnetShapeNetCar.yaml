@@ -7,7 +7,7 @@ num_epochs: 100
 batch_size: 1
 eval_batch_size: 1
 lr: 0.001
-device: "gpu:2"
+device: "gpu:0"
 save_interval: 50
 
 # model setting
